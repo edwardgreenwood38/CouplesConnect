@@ -1,11 +1,25 @@
+import React from 'react';
 import './App.css';
+
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World!</h1>
+      <h1>Welcome To The Couples Connnect App!</h1>
+    <body>
+       <div className="container">
+        <form id="registration-form">
+          <input type="email" id="email" placeholder="Email" required />
+          <input type="text" id="username" placeholder="Username" required />
+          <input type="password" id="password" placeholder="Password" required />
+          <button type="submit">Register </button>
+        </form>
+      </div>
+    </body>
     </div>
   );
+  
 }
+
 
 export default App;
