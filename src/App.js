@@ -1,12 +1,16 @@
 import React from 'react';
-import './App.css';
+
 
 
 function App() {
   return (
     <div className="App">
+      {/* <div>
+        <login/>
+      </div> */}
       <h1>Welcome To The Couples Connnect App!</h1>
     <body>
+    <login/>
        <div className="container">
         <form id="registration-form">
           <input type="email" id="email" placeholder="Email" required />
