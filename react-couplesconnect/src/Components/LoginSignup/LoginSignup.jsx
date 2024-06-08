@@ -9,10 +9,13 @@ import password_icon from '../Assets/password.png'
 
 
 const LoginSignup = () => {
+
+    const [action,setAction] = useState("Sign Up");
+
   return (
     <div className='container'> 
     <div className= "header">
-        <div className="text"> Sing Up </div>
+        <div className="text">{action} </div>
         <div className="underline"></div>
         </div>
     
@@ -27,13 +30,13 @@ const LoginSignup = () => {
             </div>  
             <div className="input">
           <img src={password_icon} alt="" />
-          <input type="password" placeholder="" />    
+          <input type="password" placeholder="Password" />    
             </div>  
         </div>
         <div className="forgot-password">Lost Password? <span>Click Here</span></div>
         <div className="submit-container"> </div>
-        <div className="submit">Sign Up<div/>
-        <div className="submit">Login<div/>
+        <div className="submit">{action==="Login"?"submit gray": "submit"}<div/>
+        <div className="submit">{action==="Sign Up"?"submit gray": "submit"}<div/>
             
     </div>
     </div>
