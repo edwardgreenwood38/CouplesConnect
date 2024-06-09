@@ -4,12 +4,13 @@ const app = express();
 const port = 3000;
 
 const sequelize = new Sequelize({
-  dialect: 'sqlite',
+  dialect: 'postgres',
   storage: './database.sqlite'
 });
 
-const User = require('./models/User')(sequelize);
-const Event = require('./models/Event')(sequelize);
+
+const User = require('./models/user')(sequelize);
+const Event = require('./models/event')(sequelize);
 
 sequelize.sync({ force: true }).then(() => {
   console.log("Database synced!");
