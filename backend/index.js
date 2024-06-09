@@ -1,21 +1,33 @@
+// index.js
+
 const express = require('express');
-const { Sequelize } = require('sequelize');
+const { Sequelize, DataTypes } = require('sequelize');
+const db = require('./models');
+
 const app = express();
 const port = 3000;
 
-const sequelize = new Sequelize({
-  dialect: 'postgres',
-  storage: './database.sqlite'
+app.use(express.json());
+
+// Basic route
+app.get('/', (req, res) => {
+  res.send('Hello World!');
 });
 
-
-const User = require('./models/user')(sequelize);
-const Event = require('./models/event')(sequelize);
-
-sequelize.sync({ force: true }).then(() => {
-  console.log("Database synced!");
+// Users routes
+app.get('/users', async (req, res) => {
+  const users = await db.User.findAll();
+  res.json(users);
 });
 
+app.post('/users', async (req, res) => {
+  const user = await db.User.create(req.body);
+  res.json(user);
+});
+
+// Start the server
 app.listen(port, () => {
-  console.log(`App listening at http://localhost:${port}`);
+  console.log(`Server is running on http://localhost:${port}`);
 });
+
+module.exports = app;
