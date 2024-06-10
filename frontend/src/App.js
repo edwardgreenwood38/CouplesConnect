@@ -1,8 +1,5 @@
 import React from 'react';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-// import RegistrationForm from './components/RegistrationForm';
-// import SignIn from './components/SignIn';
-// import Match from './gallery/Match';
 
 
 
@@ -10,16 +7,17 @@ function App() {
   return (
     <div className="App">
 
-<h1>Welcome To The Couples Connnect App!</h1>
-         <h3>Where <i>Couples</i> Find <strong>Best Friends!</strong></h3>
+       <h1>Welcome To The Couples Connnect App!</h1>
+      <h3>Where <i>Couples</i> Find <strong>Best Friends!</strong></h3>
 
-  {/* <div className="container">
-   <img height="750" width="1470" src="/melissa-askew-tSlvoSZK77c-unsplash.jpg" alt="friends" />
-  </div>  */}
+      {/* <div className="container">
+      <img height="750" width="1470" src="/melissa-askew-tSlvoSZK77c-unsplash.jpg" alt="friends" />
+      </div>  */}
 
       {/* Carousel  */}
-        <div id="demo" className="carousel" data-bs-ride="carousel" >
-        {/* Indicator Buttons */}
+      <div id="demo" className="carousel slide" data-bs-ride="carousel" >
+       
+        {/* Indicator/dots */}
         <div className="carousel-indicators">
           <button type="button" data-bs-target="#demo" data-bs-slide-to="0" className="active"></button>
           <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
@@ -31,36 +29,34 @@ function App() {
         {/* Slideshow  */}
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img width="1470" height="650" src="/melissa-askew-tSlvoSZK77c-unsplash.jpg" alt="friends" />
+            <img width="1470" height="700" src="/melissa-askew-tSlvoSZK77c-unsplash.jpg" className="d-block w-100" alt="friends" />
           </div>
-          <div className="carousel-item active">
-            <img width="1470" height="800" src="/Awesome.jpg" alt="friends" />
+          <div className="carousel-item">
+            <img width="1470" height="700" src="/Awesome.jpg" className="d-block w-100" alt="friends" />
           </div>
-          <div className="carousel-item active">
-            <img width="1470" height="800" src="/Sunset!.jpg" alt="friends" />
+          <div className="carousel-item">
+            <img width="1470" height="700" src="/Sunset!.jpg" className="d-block w-100" alt="friends" />
           </div>
-          <div className="carousel-item active">
-            <img width="1470" height="800" src="/Great Day!.jpg" alt="friends" />
+          <div className="carousel-item">
+            <img width="1470" height="700" src="/Great Day!.jpg" className="d-block w-100" alt="friends" />
           </div>
-          <div className="carousel-item active">
-            <img width="1470" height="800" src="/Fun in the sun!.jpg" alt="friends" />
+          <div className="carousel-item">
+            <img width="1470" height="700" src="/Fun in the sun!.jpg" className="d-block w-100" alt="friends" />
           </div>
         </div>
         
         
         {/* Left and right icons */}
         <button className="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
+          <span className="carousel-control-prev-icon"></span>
         </button>
 
         <button className="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
+          <span className="carousel-control-next-icon"></span>
         </button>
       </div>
-      </div> 
-      );
+    </div> 
+  );
 }
 
 
