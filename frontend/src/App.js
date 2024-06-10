@@ -13,9 +13,9 @@ function App() {
 <h1>Welcome To The Couples Connnect App!</h1>
          <h3>Where <i>Couples</i> Find <strong>Best Friends!</strong></h3>
 
-  <div className="container">
+  {/* <div className="container">
    <img height="750" width="1470" src="/melissa-askew-tSlvoSZK77c-unsplash.jpg" alt="friends" />
-  </div> 
+  </div>  */}
 
       {/* Carousel  */}
         <div id="demo" className="carousel" data-bs-ride="carousel" >
@@ -34,16 +34,16 @@ function App() {
             <img width="1470" height="650" src="/melissa-askew-tSlvoSZK77c-unsplash.jpg" alt="friends" />
           </div>
           <div className="carousel-item active">
-            <img width="1470" height="650" src="/melissa-askew-tSlvoSZK77c-unsplash.jpg" alt="friends" />
+            <img width="1470" height="800" src="/Awesome.jpg" alt="friends" />
           </div>
           <div className="carousel-item active">
-            <img width="1470" height="650" src="/melissa-askew-tSlvoSZK77c-unsplash.jpg" alt="friends" />
+            <img width="1470" height="800" src="/Sunset!.jpg" alt="friends" />
           </div>
           <div className="carousel-item active">
-            <img width="1470" height="650" src="/melissa-askew-tSlvoSZK77c-unsplash.jpg" alt="friends" />
+            <img width="1470" height="800" src="/Great Day!.jpg" alt="friends" />
           </div>
           <div className="carousel-item active">
-            <img width="1470" height="650" src="/melissa-askew-tSlvoSZK77c-unsplash.jpg" alt="friends" />
+            <img width="1470" height="800" src="/Fun in the sun!.jpg" alt="friends" />
           </div>
         </div>
         
