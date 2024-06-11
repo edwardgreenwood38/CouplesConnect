@@ -10,7 +10,7 @@ Backend
 
 
 ## Description
-A site where couples can meet other likeminded couples to enjoy activities together.
+A site where couples can meet other like minded couples to enjoy activities together.
 
 
 ## How to use
@@ -21,8 +21,13 @@ You will need to register and login to use the site. Once logged in you can view
 ### Technologies used
 React and Express with PostgresDB
 
+-----------------------------------------------
+
 
 ### Future enhancements and/or known issues
++ add comments for events
++ add categories for users to select as part of user profile
++ add categories to events
 
 
 ==============================================
