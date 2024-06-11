@@ -10,10 +10,11 @@ developeres
 
 
 ## Description
-
+A site where couples can meet other likeminded couples to enjoy activities together.
 
 
 ## How to use
+You will need to register and login to use the site. Once logged in you can view events that have been listed for activities based on personnel preferences.
 
 
 =============================================
@@ -21,7 +22,7 @@ developeres
 React and Express with PostgresDB
 
 
-### Future enhansements and/or known issues
+### Future enhancements and/or known issues
 
 
 ==============================================

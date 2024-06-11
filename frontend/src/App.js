@@ -1,5 +1,5 @@
 import React from 'react';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+// import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
 
-       <h1>Welcome To The Couples Connnect App!</h1>
+      <h1>Welcome To The Couples Connnect App!</h1>
       <h3>Where <i>Couples</i> Find <strong>Best Friends!</strong></h3>
 
       {/* <div className="container">
