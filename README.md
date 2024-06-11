@@ -27,12 +27,16 @@ React and Express with PostgresDB
 
 ==============================================
 #### database scema
-User table
-username
-email
-password
+**User table**
+|column|description|
+|--------|---------|
+|username|holds user name|
+|email|user email|
+|password|hash of user password|
 
-Events table
-title
-description
-date
+**Events table**
+|column|description|
+|--------|---------|
+|title|name of event|
+|description|information about the event|
+|date|date that the event occurs|
