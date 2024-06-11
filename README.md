@@ -28,5 +28,11 @@ React and Express with PostgresDB
 ==============================================
 #### database scema
 User table
+username
+email
+password
 
 Events table
+title
+description
+date
