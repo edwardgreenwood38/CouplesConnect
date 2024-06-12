@@ -6,8 +6,9 @@ import Events from './components/Events/Events'
 function App() {
   return(
     <div>
-      <Signup></Signup>
-      <Events></Events>
+      <Signup/>
+      
+      <Events/>
     </div>
   );
 }
