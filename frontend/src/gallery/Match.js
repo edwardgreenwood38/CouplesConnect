@@ -38,7 +38,7 @@ function Match() {
             </div>
             <div class="couple">
                 <img src="placeholder.png" alt="placeholder" />
-                <h4>Bob & Shaniqua</h4>
+                <h4>Tim & Shaniqua</h4>
                 <p>Lorem ipsum dolor...</p>
             </div>
             {/* GALLERY ENDS */}
