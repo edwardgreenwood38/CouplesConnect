@@ -1,15 +1,16 @@
 import React from 'react';
-// import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import Navagation from './components/Navagation';
 
 
 function App() {
   return (
     <div className="App">
+      
 
       <h1>Welcome To The Couples Connnect App!</h1>
       <h3>Where <i>Couples</i> Find <strong>Best Friends!</strong></h3>
-
+            <Navagation />
       {/* <div className="container">
       <img height="750" width="1470" src="/melissa-askew-tSlvoSZK77c-unsplash.jpg" alt="friends" />
       </div>  */}
