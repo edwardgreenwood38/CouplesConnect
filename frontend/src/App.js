@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Home from './components/Home'
 import Match from './gallery/Match'
-import PlaceDetails from './gallery/Members'
 import Navigation from './components/Navigation'
 import Error404 from './components/error404'
 import Members from './gallery/Members'
@@ -22,9 +21,9 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/SignIn" component={SignIn} />
           <Route exact path="/RegistrationForm" component={RegistrationForm} />
-          <Route exact path="/Match" component={Match} />
-          <Route exact path="/Members" component={Members} />
-          <Route exact path="/places/:placeId" component={PlaceDetails} />
+          <Route exact path="/gallery/Match" component={Match} />
+          <Route exact path="/gallery/Members" component={Members} />
+          
           <Route path="/" component={Error404} />
         </Switch>
       </BrowserRouter>

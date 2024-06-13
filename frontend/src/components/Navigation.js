@@ -1,10 +1,10 @@
-import { useState, useEffect, useContext } from 'react'
-import { Link, useHistory } from "react-router-dom";
+import {  useContext } from 'react'
+import { Link, } from "react-router-dom";
 import { CurrentUserContext } from './contexts/CurrentUser';
 
 function Navigation() {
 
-    const history = useHistory();
+    // const history = useHistory();
 
     const { currentUser } = useContext(CurrentUserContext);
 
