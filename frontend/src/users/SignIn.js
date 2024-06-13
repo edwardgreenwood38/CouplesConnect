@@ -24,24 +24,25 @@ function SignIn() {
         } else {
             alert('Login Failed!, Please try again');
         }
-    } catch(error) {
+      } catch(error) {
         console.log(error);
         alert('An error occured, Please try again in 1 min!');
-    }
-};
+      }
+    };
+
     return (
         <div className = "container">
             <h1>User Login</h1>
             <form onSubmit = {handleSubmit}>
-            <input
+             <input
                 type = "email"
                 placeholder = "Email"
                 value = {email}
                 onChange = {(e) => setEmail(e.target.value)}
                 required
-            />
+             />
 
-            <input
+             <input
                 type = "password"
                 placeholder = "Password"
                 value = {password}
@@ -50,10 +51,10 @@ function SignIn() {
              />
 
                 {/* Button */}
-            <button type="submit">Login</button>
+              <button type="submit">Login</button>
             </form>
         </div>
-      );
-    }
+    );
+}
 
 export default SignIn;
