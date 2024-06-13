@@ -12,6 +12,7 @@
     height: 250px;
     margin: 20px auto;
     background: purple;
+    border-radius: 6px;
 }
 
 .EventBased .box:hover {
@@ -19,12 +20,19 @@
     cursor: pointer;
 }
 
+.EventBased h6{
+    font-size: 20px;
+    
+}
+
 .EventBased .box h6{
     font-size: 20px;
     font-weight: 900;
+    font: orange;
 }
 
 .EventBased .box p{
-    font-size: 11px;
+    font-size: 20px;
     margin: 20px auto;
+    
 }
