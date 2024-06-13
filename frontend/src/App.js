@@ -1,66 +1,34 @@
-import React from 'react';
-import Navigation from './components/Navigation';
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import Home from './components/Home'
+import Match from './gallery/Match'
+import PlaceDetails from './gallery/Members'
+import Navigation from './components/Navigation'
+import Error404 from './components/error404'
+import Members from './gallery/Members'
+import SignIn from './users/SignIn'
+import RegistrationForm from './users/RegistrationForm'
+import CurrentUserProvider from './contexts/CurrentUser'
+
+
 
 
 
 function App() {
   return (
-    <div className="App">
-
-      
+    <CurrentUserProvider>
+      <BrowserRouter>
         <Navigation />
-      
-      
-
-       <h1>Welcome To The Couples Connect App!</h1>
-      <h3>Where <i>Couples</i> Find <strong>Best Friends!</strong></h3>
-            {/* <Navagation /> */}
-      {/* <div className="container">
-      <img height="750" width="1470" src="/melissa-askew-tSlvoSZK77c-unsplash.jpg" alt="friends" />
-      </div>  */}
-
-      {/* Carousel  */}
-      <div id="demo" className="carousel slide" data-bs-ride="carousel" >
-       
-        {/* Indicator/dots */}
-        <div className="carousel-indicators">
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" className="active"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
-        </div>
-
-        {/* Slideshow  */}
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img width="1470" height="700" src="/melissa-askew-tSlvoSZK77c-unsplash.jpg" className="d-block w-100" alt="friends" />
-          </div>
-          <div className="carousel-item">
-            <img width="1470" height="700" src="/Awesome.jpg" className="d-block w-100" alt="friends" />
-          </div>
-          <div className="carousel-item">
-            <img width="1470" height="700" src="/Sunset!.jpg" className="d-block w-100" alt="friends" />
-          </div>
-          <div className="carousel-item">
-            <img width="1470" height="700" src="/Great Day!.jpg" className="d-block w-100" alt="friends" />
-          </div>
-          <div className="carousel-item">
-            <img width="1470" height="700" src="/Fun in the sun!.jpg" className="d-block w-100" alt="friends" />
-          </div>
-        </div>
-        
-        
-        {/* Left and right icons */}
-        <button className="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon"></span>
-        </button>
-
-        <button className="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-          <span className="carousel-control-next-icon"></span>
-        </button>
-      </div>
-    </div> 
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/SignIn" component={SignIn} />
+          <Route exact path="/RegistrationForm" component={RegistrationForm} />
+          <Route exact path="/Match" component={Match} />
+          <Route exact path="/Members" component={Members} />
+          <Route exact path="/places/:placeId" component={PlaceDetails} />
+          <Route path="/" component={Error404} />
+        </Switch>
+      </BrowserRouter>
+    </CurrentUserProvider>
   );
 }
 
