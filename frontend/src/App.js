@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './components/Home'
 import Match from './gallery/Match'
 import Navigation from './components/Navigation'
@@ -15,9 +15,9 @@ import CurrentUserProvider from './contexts/CurrentUser'
 function App() {
   return (
     <CurrentUserProvider>
-      <BrowserRouter>
+      <Router>
         <Navigation />
-        <Switch>
+        <Routes>
           <Route exact path="/" component={Home} />
           <Route exact path="/SignIn" component={SignIn} />
           <Route exact path="/RegistrationForm" component={RegistrationForm} />
@@ -25,8 +25,8 @@ function App() {
           <Route exact path="/gallery/Members" component={Members} />
           
           <Route path="/" component={Error404} />
-        </Switch>
-      </BrowserRouter>
+        </Routes>
+      </Router>
     </CurrentUserProvider>
   );
 }

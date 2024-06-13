@@ -1,32 +1,32 @@
-import {  useContext } from 'react'
+// import {  useContext } from 'react'
 import { Link, } from "react-router-dom";
-import { CurrentUserContext } from './contexts/CurrentUser';
+// import { CurrentUserContext } from './contexts/CurrentUser';
 
 function Navigation() {
 
     // const history = useHistory();
 
-    const { currentUser } = useContext(CurrentUserContext);
+    // const { currentUser } = useContext(CurrentUserContext);
 
-    let loginActions = (
-        <>
-            <li style={{ float: 'right' }}>
-                <Link to="/SignIn">Sign In</Link>
+    // let loginActions = (
+    //     <>
+    //         <li style={{ float: 'right' }}>
+    //             <Link to="/SignIn">Sign In</Link>
                 
-            </li>
-            <li style={{ float: 'right' }}>
-                <Link to="RegisterForm">Register</Link>
-            </li>
-        </>
-    )
+    //         </li>
+    //         <li style={{ float: 'right' }}>
+    //             <Link to="RegisterForm">Register</Link>
+    //         </li>
+    //     </>
+    // )
 
-    if (currentUser) {
-        loginActions = (
-            <li style={{ float: 'right' }}>
-                Logged in as {currentUser.firstName} {currentUser.lastName}
-            </li>
-        )
-    }
+    // if (currentUser) {
+    //     loginActions = (
+    //         <li style={{ float: 'right' }}>
+    //             Logged in as {currentUser.firstName} {currentUser.lastName}
+    //         </li>
+    //     )
+    // }
     return (
         <nav className="navbar navbar-expand-lg navbar-light-bg bg-light">
             <div className="container-fluid">
@@ -57,7 +57,7 @@ function Navigation() {
                                <li><Link className="dropdown-item" to="/gallery/Match">Match</Link></li> 
                             </ul>
                         </li>
-                        {loginActions}
+                        {/* {loginActions} */}
                     </ul>
                 </div>
             </div>
