@@ -2,12 +2,16 @@
     margin-bottom: 150px;
 }
 
+.EventBased .row {
+    margin: 60px;
+}
+
 .EventBased .box{
     box-shadow: var(--boxShadow);
     padding: 20px;
     height: 250px;
     margin: 20px auto;
-    background: white;
+    background: purple;
 }
 
 .EventBased .box:hover {
