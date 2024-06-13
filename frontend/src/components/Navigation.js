@@ -37,21 +37,21 @@ function Navigation() {
                 <div className="collapse navbar-collapse" id="navbarNavSupportedContent">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <Link className="nav-link" to="./RegistrationForm.jsx">Registration</Link>
+                            <Link className="nav-link" to="/RegistrationForm">Registration</Link>
                         </li>
                         <li className="nav-item">
-                             <Link className="nav-link" to="./SignIn.jsx">Sign In</Link>
+                             <Link className="nav-link" to="/Sign-In">Sign In</Link>
                         </li>
                         <li className="nav-item dropdown">
-                             <Link className ="nav-link dropdown-toggle" to="./events" id="navabarDropdown" role="button" aria-expanded="false">Event</Link> 
+                             <Link className ="nav-link dropdown-toggle" to="/events" id="navabarDropdown" role="button" aria-expanded="false">Event</Link> 
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                               <li><Link className="dropdown-item" to="./event/create">Create Event</Link></li> 
-                               <li><Link className="dropdown-item" to="./event/join">Join Event</Link></li> 
+                               <li><Link className="dropdown-item" to="/event/create">Create Event</Link></li> 
+                               <li><Link className="dropdown-item" to="/event/join">Join Event</Link></li> 
                                <li><Link className="dropdown-item" to="/event/edit">Edit</Link></li> 
                             </ul>
                         </li>
                         <li className="nav-item dropdown">
-                             <Link className="nav-link dropdown-toggle" to="./gallery" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Gallery</Link> 
+                             <Link className="nav-link dropdown-toggle" to="/gallery" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Gallery</Link> 
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                               <li><Link className="dropdown-item" to="/gallery/Members">Members</Link></li> 
                                <li><Link className="dropdown-item" to="/gallery/Match">Match</Link></li> 
