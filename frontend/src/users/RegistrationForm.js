@@ -10,7 +10,7 @@ function RegistrationForm() {
         e.preventDefault();
         console.log('form submitted');
         try {
-            const response = await fetch(`/register`, {
+            const response = await fetch(`http://localhost:5000/registration`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

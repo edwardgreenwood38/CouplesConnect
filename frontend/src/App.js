@@ -3,11 +3,12 @@ import Home from './components/Home'
 import Navigation from './components/Navigation'
 import Error404 from './components/error404'
 import GalleryIndex from './gallery/GalleryIndex'
-import Members from './gallery/Members'
+// import Members from './gallery/Members'
 import Match from './gallery/Match'
-import SignIn from './users/SignIn'
+import Signup from './components/loginSignup/Signup'
 import RegistrationForm from './users/RegistrationForm'
 import CurrentUserProvider from './contexts/CurrentUser'
+import Events from './events/Events'
 
 
 
@@ -20,11 +21,12 @@ function App() {
         <Navigation />
         <Routes>
           <Route  path="/" element={<Home />} />
-          <Route  path="/sign-in" element={<SignIn />} />
+          <Route  path="/sign-up" element={<Signup />} />
           <Route  path="/registrationForm" element={<RegistrationForm />} />
+          <Route  path="/events" element={<Events />} />
           <Route  path="/gallery" element={<GalleryIndex />} />
           <Route  path="/match" element={<Match />} />
-          <Route  path="/members" element={<Members />} />
+          {/* <Route  path="/members" element={<Members />} /> */}
           <Route path="/error404" element={<Error404 />} />
         </Routes>
       </Router>

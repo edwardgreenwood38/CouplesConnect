@@ -1,9 +1,6 @@
 const router = require('express').Router();
-// const db = require('./db');
+import User from  '../models/user';
 
-// const { User } = db;
-
-// Login route
 router.post('/', (req, res) => {
     const { username, password, email } = req.body;
     User.create({ username, password, email })
