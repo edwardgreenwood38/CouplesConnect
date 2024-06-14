@@ -1,0 +1,38 @@
+.EventBased {
+    margin-bottom: 150px;
+}
+
+.EventBased .row {
+    margin: 60px;
+}
+
+.EventBased .box{
+    box-shadow: var(--boxShadow);
+    padding: 20px;
+    height: 250px;
+    margin: 20px auto;
+    background: purple;
+    border-radius: 6px;
+}
+
+.EventBased .box:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.EventBased h6{
+    font-size: 20px;
+    
+}
+
+.EventBased .box h6{
+    font-size: 20px;
+    font-weight: 900;
+    font: orange;
+}
+
+.EventBased .box p{
+    font-size: 20px;
+    margin: 20px auto;
+    
+}
