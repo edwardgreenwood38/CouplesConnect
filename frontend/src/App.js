@@ -6,7 +6,8 @@ import Error404 from './components/error404'
 import GalleryIndex from './gallery/GalleryIndex'
 import Members from './gallery/Members'
 import Match from './gallery/Match'
-import SignIn from './components/loginSignup/SignIn'
+import SignIn from './components/loginSignup/SignUp'
+import LoginForm from './components/loginSignup/LoginForm'
 import CurrentUserProvider from './contexts/CurrentUser'
 import Events from './components/Events/Events'
 
@@ -22,6 +23,7 @@ function App() {
         <Routes>
           <Route  path="/" element={<Home />} />
           <Route  path="/sign-in" element={<SignIn />} />
+          <Route  path="/login" element={<LoginForm />} />
           <Route  path="/events" element={<Events />} />
           <Route  path="/gallery" element={<GalleryIndex />} />
           <Route  path="/match" element={<Match />} />

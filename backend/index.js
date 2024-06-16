@@ -8,8 +8,13 @@ const app = express();
 
 
 
+
 // express settings
-app.use(cors());
+app.use('/user', require('./controllers/User'));
+app.use(cors({
+    origin: 'http://localhost:3000',
+    credentials: true
+}));
 app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 // serve static frontend in prodution mode
@@ -20,8 +25,7 @@ if (process.env.NODE_ENV == 'production') {
 // controller & routes
 app.use(express.urlencoded({ extended: true }));
 
-app.use('/user', require('./controllers/User'));
-// app.use('/event', require('./controllers/Event'));
+
 
 
 

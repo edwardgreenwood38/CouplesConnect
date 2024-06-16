@@ -36,9 +36,9 @@ function Navigation() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavSupportedContent">
                     <ul className="navbar-nav">
-                        {/* <li className="nav-item">
-                            <Link className="nav-link" to="/RegistrationForm">Registration</Link>
-                        </li> */}
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/Sign-Up">Sign Up</Link>
+                        </li>
                         <li className="nav-item">
                              <Link className="nav-link" to="/Sign-In">Sign In</Link>
                         </li>

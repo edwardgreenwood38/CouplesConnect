@@ -1,5 +1,4 @@
 const router = require('express').Router();
-import User from './models/User';
 
 // login/signup routes
 router.post('/', async (req, res) => {
