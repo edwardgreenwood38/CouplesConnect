@@ -39,6 +39,9 @@ https://www.vecteezy.com/
 
 
 ### Future enhancements and/or known issues
++ change link for 'Sign Up' to point to new user page
++ change 'Sign In' to point to login page
++ finish view for events
 + add comments for events
 + add categories for users to select as part of user profile
 + add categories to events
