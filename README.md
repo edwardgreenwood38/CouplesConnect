@@ -1,6 +1,9 @@
 # CouplesConnect
 ThriveDX milestone project 3 final
 
+Deployed to Vercel.
+https://couples-connect-pl9h58fdj-edward-greenwoods-projects.vercel.app/
+
 ## Developeres
 Frontend
 * Roy Minor, Darius Porch
@@ -40,7 +43,7 @@ https://www.vecteezy.com/
 + add categories for users to select as part of user profile
 + add categories to events
 + add gallery feature to app. shell of feature is partially started
-+ needs to deploy
++ need backend deployed and a postgres db for online use
 
 
 ==============================================
