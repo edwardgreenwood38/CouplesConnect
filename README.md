@@ -20,6 +20,7 @@ You will need to register and login to use the site. Once logged in you can view
 =============================================
 ### Technologies used
 All pictures from landing page were from upsplash.com
+
 React and Express with PostgresDB
 
 -----------------------------------------------
