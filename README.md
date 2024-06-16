@@ -16,19 +16,21 @@ A site where couples can meet other like minded couples to enjoy activities toge
 ## How to use
 You will need to register and login to use the site. Once logged in you can view events that have been listed for activities based on personnel preferences.
 
-Events page shows what upcoming events we have on Couples Connect. 
++ Events page shows what upcoming events we have on Couples Connect. 
 
 =============================================
 ### Technologies used
 All frontend photos were from upsplash.com
-Email.png came from [
-](https://www.vecteezy.com/)
++ Frontend Sign up Photos 
 
-Password.png came from [
-](https://www.veryicon.com/icons/internet--web/sesame-treasure/login-password-3.html)
++ Email: Email.png came from 
+https://www.vecteezy.com/
 
-Bootstrap was used for the font 
-React and Express with PostgresDB
++ Password: Password.png came from https://www.veryicon.com/icons/internet--web/sesame-treasure/login-password-3.html
+
++ Node and Bootstrap was used for the frontend 
+
++ React and Express with PostgresDB
 
 -----------------------------------------------
 
