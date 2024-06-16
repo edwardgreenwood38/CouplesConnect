@@ -1,29 +1,31 @@
-const { DataTypes } = require('sequelize');
+'use strict';
+const {
+  Model
+} = require('sequelize');
+module.exports = (sequelize, DataTypes) => {
+  class User extends Model {
 
-module.exports = (sequelize) => {
-  const User = sequelize.define('User', {
-    name: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      unique: true
-    },
-    email: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      unique: true
-    },
-    password: {
-      type: DataTypes.STRING,
-      allowNull: false
-    }
-  });
+  //   static associate({Event}) {
+  //     User.hasMany(Event, { foreignKey: 'user_id' });
+  // }
 
-  User.associate = (models) => {
-    User.hasMany(models.Event, {
-      foreignKey: 'userId',
-      as: 'events'
-    });
   };
+  User.init({
+    user_id: {
+      type: DataTypes.SMALLINT,
+      primaryKey: true,
+      autoIncrement: true
 
+    },
+    email: DataTypes.STRING,
+    password: DataTypes.STRING,
+    name: DataTypes.STRING
+  }, {
+    sequelize,
+    modelName: 'User',
+    timestamps: false,
+    tableName: 'users'
+
+  });
   return User;
 };
