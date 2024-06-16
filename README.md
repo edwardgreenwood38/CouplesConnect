@@ -39,6 +39,7 @@ https://www.vecteezy.com/
 + add comments for events
 + add categories for users to select as part of user profile
 + add categories to events
++ add gallery feature to app. shell of feature is partially started
 + needs to deploy
 
 
@@ -47,6 +48,7 @@ https://www.vecteezy.com/
 **User table**
 |column|description|
 |--------|---------|
+|user_id|unique id for users|
 |username|holds user name|
 |email|user email|
 |password|hash of user password|
@@ -54,6 +56,8 @@ https://www.vecteezy.com/
 **Events table**
 |column|description|
 |--------|---------|
+|id|unique id for events|
 |title|name of event|
 |description|information about the event|
 |date|date that the event occurs|
+
