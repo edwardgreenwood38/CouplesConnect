@@ -19,6 +19,8 @@ You will need to register and login to use the site. Once logged in you can view
 
 =============================================
 ### Technologies used
+All frontend photos were from upsplash.com
+
 React and Express with PostgresDB
 
 -----------------------------------------------
@@ -28,6 +30,7 @@ React and Express with PostgresDB
 + add comments for events
 + add categories for users to select as part of user profile
 + add categories to events
++ needs to deploy
 
 
 ==============================================
