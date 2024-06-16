@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: orange;
 }
 
 .App-logo {
@@ -24,7 +25,7 @@
   color: white;
 }
 
-.App-link {
+.body {
   color: #61dafb;
 }
 

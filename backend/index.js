@@ -20,8 +20,8 @@ if (process.env.NODE_ENV == 'production') {
 // controller & routes
 app.use(express.urlencoded({ extended: true }));
 
-app.use('/users', require('./controllers/users_controller'));
-app.use('/registration', require('./controllers/registration_controller'));
+app.use('/user', require('./controllers/User'));
+// app.use('/event', require('./controllers/Event'));
 
 
 

@@ -6,10 +6,10 @@
     margin: 60px;
 }
 
-.EventBased .box{
+.EventBased .box {
     box-shadow: var(--boxShadow);
     padding: 20px;
-    height: 250px;
+    height: 350px;
     margin: 20px auto;
     background: purple;
     border-radius: 6px;
@@ -20,18 +20,18 @@
     cursor: pointer;
 }
 
-.EventBased h6{
+.EventBased h6 {
     font-size: 20px;
     
 }
 
-.EventBased .box h6{
+.EventBased .box h6 {
     font-size: 20px;
     font-weight: 900;
     font: orange;
 }
 
-.EventBased .box p{
+.EventBased .box p {
     font-size: 20px;
     margin: 20px auto;
     
